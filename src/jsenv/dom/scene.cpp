@@ -41,7 +41,7 @@ $jsMethod(Scene_fullscreenEnabled_g) {
 $jsMethod(Scene_lastModified_g) {
   v->setReturnVar(newScriptVarNumber(
     getState(),
-    lastmod.count()
+    (double)lastmod.count()
   ));
 }
 
@@ -57,13 +57,13 @@ $jsMethod(new_Scene) {
 
 $jsMethod(Scene_requestFullscreen) {
 #ifdef GEODE_IS_DESKTOP
-  CCDirector::get()->getOpenGLView()->toggleFullscreen(true, false, false);
+  CCDirector::get()->getOpenGLView()->toggleFullScreen(true, false, false);
 #endif
   v->setReturnVar(newScriptVarUndefined(getState()));
 }
 $jsMethod(Scene_exitFullscreen) {
 #ifdef GEODE_IS_DESKTOP
-  CCDirector::get()->getOpenGLView()->toggleFullscreen(false, false, false);
+  CCDirector::get()->getOpenGLView()->toggleFullScreen(false, false, false);
 #endif
   v->setReturnVar(newScriptVarUndefined(getState()));
 }

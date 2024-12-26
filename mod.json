@@ -8,7 +8,14 @@
 	},
 	"id": "henrysck075.javascript",
 	"name": "JavaScript",
-	"version": "v1.0.0",
+	"version": "v0.2.2",
 	"developer": "henrysck075",
-	"description": "the laws of geode modding"
+	"description": "the laws of geode modding",
+  "api": {
+    "include": [
+      "src/jsenv/**/*.hpp",
+      "external/tinyjs/*.hpp",
+      "external/tinyjs/*.h"
+    ]
+  }
 }

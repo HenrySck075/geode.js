@@ -2,7 +2,6 @@
 #include "../state.hpp"
 #include <Geode/DefaultInclude.hpp>
 #include <Geode/Modify.hpp>
-#include "../../DOM.hpp"
 #include <queue>
 
 struct idk : geode::Modify<idk, cocos2d::CCNode> {

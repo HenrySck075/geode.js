@@ -2,8 +2,9 @@
 #define __puppeteer_js__
 
 #include "../../external/tinyjs/TinyJS.hpp"
+#include "../../exports.h"
 
-CTinyJS* getState();
+CTinyJS* javascript_DLL getState();
 
 void nukeState();
 #endif

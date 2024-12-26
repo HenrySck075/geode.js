@@ -2,8 +2,9 @@
 #define __puppeteer_console__
 
 #include <Geode/loader/Event.hpp>
+#include "../../exports.h"
 
-class ConsoleEvent : public geode::Event {
+class javascript_DLL ConsoleEvent : public geode::Event {
 public:
   std::string type;
 
